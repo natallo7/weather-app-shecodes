@@ -1,0 +1,71 @@
+body {
+  font-family: "Arima Madurai", cursive;
+  padding: 30px;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/175/original/pexels-photo-1423600.jpeg?1650299540");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.city {
+  text-align: center;
+}
+
+.content {
+  display: block;
+  padding: 5px 37px;
+  background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  border-radius: 30px;
+  opacity: 80%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.forecast-days,
+.forecast-icons {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.submit {
+  background: #71a0a5;
+  border: 3px solid rgb(98, 131, 166);
+  border-radius: 30px;
+  box-shadow: 0px 5px 5px 0px rgba(172, 35, 190, 0.08);
+  color: #fff;
+  font-size: 12px;
+  margin: 28px auto;
+  padding: 7px 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.today-temperature,
+.today-weather {
+  padding: 30px;
+}
+
+.temperature {
+  font-size: 18px;
+}
+
+.weather-conditions {
+  padding: 20px;
+}
+
+.weather-forecast-1 {
+  background: #acc6aa;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 306px;
+  text-align: center;
+  position: relative;
+  right: 12px;
+  bottom: 39px;
+}
+
+.weather-forecast-3 {
+  padding: 20px;
+}
+
+.woman-sun {
+  width: 90px;
+}
