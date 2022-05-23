@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/02b7eefe46.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="content">
+      <form id = search-form>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                id="search-city"
+                placeholder="Enter city here.."
+                autofocus="on"
+                autocomplete="off"
+              />
+              <input type="submit" class="submit" value="Search" />
+            </form>
+              <button type="submit" class="submit" id="current-location">Current location</button>
+            </div>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-8 d-flex flex-column">
+          <div class="row today-weather">
+            <div class="col">
+              <h1 class = city id="city"></h1> 
+            </div>
+          </div>
+          <div class="today-temperature flex-fill">
+            <h3 id="current-date"></h5>
+            <div class="row">
+              <div class="col-3">
+                <img
+                  src="img/woman-sun.svg"
+                  alt="woman holding cloud and sun"
+                  class="woman-sun"
+                />
+              </div>
+              <div class="col-4 temperature">
+                <span id="temperature"></span> 
+                <span><a href="#" id="temp-celsius">°C</a> | 
+                <a href="#" id="temp-fahrenheit">°F</a>
+                </span>
+              <div class="temp-difference" id="temp-high-low">
+                H:18° L:8°
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-cols-auto weather-conditions">
+            <div class="col-3">
+              <i class="fa-solid fa-wind"></i>
+              <span class="weather-1">WIND</span>
+              <div class="weather-1">13 km/h</div>
+            </div>
+
+            <div class="col-3">
+              <i class="fa-solid fa-water"></i>
+              <span class="weather-1">HUMIDITY</span>
+              <div class="weather-1">20%</div>
+            </div>
+
+            <div class="col-3">
+              <i class="fa-solid fa-temperature-high"></i>
+              <span class="weather-1">UV INDEX</span>
+              <div class="weather-1">3 MODERATE</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="weather-forecast-1">
+            <div class="weather-forecast-3">
+              <div class="row">
+                <div class="col-sm-6 forecast-days">
+                  Monday <br />
+                  <small>H:20° L:9°</small>
+                </div>
+                <div class="col-sm-6">
+                  <i class="fa-solid fa-sun forecast-icons"></i>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-sm-6 forecast-days">
+                  Tuesday <br />
+                  <small>H:16° L:5°</small>
+                </div>
+                <div class="col-sm-6">
+                  <i class="fa-solid fa-cloud forecast-icons"></i>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-sm-6 forecast-days">
+                  Wednesday <br />
+                  <small>H:15° L:5°</small>
+                </div>
+                <div class="col-sm-6">
+                  <i class="fa-solid fa-cloud-sun-rain forecast-icons"></i>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-sm-6 forecast-days">
+                  Thursday <br />
+                  <small>H:22° L:8°</small>
+                </div>
+                <div class="col-sm-6">
+                  <i class="fa-solid fa-sun forecast-icons"></i>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-sm-6 forecast-days">
+                  Friday <br />
+                  <small>H:20° L:8°</small>
+                </div>
+                <div class="col-sm-6">
+                  <i class="fa-solid fa-sun forecast-icons"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="github-link">
+    <a href="https://github.com/natallo7/weather-app-shecodes">Open-source code</a> by Natalia Lloyd
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
